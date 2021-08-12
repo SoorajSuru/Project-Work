@@ -1,0 +1,183 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/background.js" defer></script>
+    <script src="../js/shop.js" defer></script>
+    <script src="../js/nav.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <template id="product-card">
+        <div class="product">
+            <div class="prod-img">
+                <div class="layer">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="prod-info">
+                <p class="prod-name"></p>
+                <span class="material-icons">favorite_border</span>
+            </div>
+            <p class="prod-price"></p>
+        </div>
+    </template>
+
+    <template id="cart-heart-product">
+        <div class="cart-item heart-item">
+            <div class="cart-prod-img heart-prod-img"></div>
+            <div class="cart-prod-content heart-prod-content">
+                <div class="name"></div>
+                <div class="price"></div>
+            </div>
+            <button>x</button>
+        </div>
+    </template>
+
+    <div class="backdrop"></div>
+
+    <div class="cart-nav">
+        <div class="cart-nav-header">
+            <h3>YOUR CART</h3>
+            <div class="ham">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="cart-nav-items"></div>
+        <button class="cart-nav-btn">VIEW CART</button>
+    </div>
+
+    <div class="heart-nav">
+        <div class="heart-nav-header">
+            <h3>YOUR WISHLIST</h3>
+            <div class="ham">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="heart-nav-items"></div>
+        <button class="heart-nav-btn">VIEW WISHLIST</button>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-item">
+                <h1 class="title">MAX <span>Store</span></h1>
+            </div>
+            <div class="nav-item">
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <span class="cart material-icons">
+                    shopping_cart
+                </span>
+                <span class="heart material-icons">
+                    favorite
+                </span>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <main>
+        <div class="landing-img-container">
+            <div class="landing-img-container-content">
+                <h3>New Season</h3>
+                <h1>NEW ARRIVALS</h1>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <div class="categories">
+            <div class="categories-item women">
+                <div class="categories-content">
+                    <h1>Women</h1>
+                    <p>Season 2021</p>
+                </div>
+            </div>
+            <div class="categories-item men">
+                <div class="categories-content">
+                    <h1>Men</h1>
+                    <p>Season 2021</p>
+                </div>
+            </div>
+            <div class="categories-item accessories">
+                <div class="categories-content">
+                    <h1>Accessories</h1>
+                    <p>New Trend</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-overview">
+            <h1>PRODUCT OVERVIEW</h1>
+            <h3 class="trending">TRENDING</h3>
+        </div>
+        <div class="products-section"></div>
+        <button class="load-more-btn">LOAD MORE</button>
+    </main>
+    <footer>
+        <div class="footer-section1">
+            <div class="footer-column footer-column-1">
+                <h4>CATEGORIES</h4>
+                <p>Women</p>
+                <p>Men</p>
+                <p>Shoes</p>
+                <p>Watches</p>
+            </div>
+            <div class="footer-column">
+                <h4>HELP</h4>
+                <p>Track Order</p>
+                <p>Returns</p>
+                <p>Shipping</p>
+                <p>FAQs</p>
+            </div>
+            <div class="footer-column">
+                <h4>GET IN TOUCH</h4>
+                <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on
+                    (+1) 96 716 6879</p>
+                <div class="icons">
+                    <img src="../icons/facebook4.png">
+                    <img src="../icons/instagram2.png">
+                    <img src="../icons/pinterest2.png">
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>NEWSLETTER</h4>
+                <input type="text" id="email" placeholder="email@example.com">
+                <button id="subscribe">SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="footer-section2">
+            <img src="../images/payments/1.webp">
+            <img src="../images/payments/2.webp">
+            <img src="../images/payments/3.webp">
+            <img src="../images/payments/4.webp">
+            <img src="../images/payments/5.webp">
+        </div>
+        <div class="footer-section3">Copyright ©2021 All rights reserved | This template is made with
+            <span class="material-icons">
+                favorite_border
+            </span> by <span>SURAJ.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
